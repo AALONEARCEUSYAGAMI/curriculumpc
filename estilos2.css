@@ -1,0 +1,466 @@
+h1{
+  text-align: center;
+}
+
+#lista1 li {  /* llamo al elemento señalado*/
+  /* quita estilos ya predeterminados*/
+   margin: 20px; /* distancia elementos de la lista*/
+    display:inline; /* de vertical a orizontal*/
+
+   
+}
+
+#lista1 {
+    font-family:Arial;
+    font-weight:lighter;
+   
+    font: size 13px; /* tamaño texto */
+    line-height: 30px; /* distancia de los elementos verticales */
+   
+    text-align:center; /* centrar lista */
+  
+    
+}
+a {
+   color:rgb(241, 241, 249); 
+   color:rgb(241, 241, 249);
+  
+   font-family:Franklin Gothic Medium;
+   
+}
+.put{
+    text-align: center;
+}
+
+
+body {
+    background: url(cieloestrellado.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header{
+
+    background-color: rgba(45, 45, 75, 0.8);  
+    border-radius: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+
+
+}
+#titulo1{
+text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: fantasy;
+}
+main{
+    text-align:left 30%;
+    color:white;
+    text-decoration:none;
+    font-family:Arial;
+ 
+}
+article{
+    margin-top: 2%;
+    background-color: rgb(5, 5, 5);
+ border-radius: 40px;
+ opacity: 0.8;
+ image-orientation: from-image;
+
+ }
+ 
+h2
+{
+text-align: center;
+font-size: 40px;
+text-decoration: underline; /* Subrayar los títulos */
+}
+
+ul
+{
+    background-color: rgba(2, 23, 44, 0.6);
+    border-radius: 40px;
+    
+}
+footer {
+    background-color: black;
+    
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height: 35px;
+    width:100%;
+    color: white;
+    opacity: 0.6;
+    
+  }
+
+  .alinear-izquierda{
+    float: right;
+    }
+    h3
+{
+text-align: center;
+}
+p{
+    text-align: center;
+}
+/* Estilo para los enlaces en el menú */
+#lista1 li a {
+    text-decoration: none; /* Quitamos el subrayado predeterminado */
+    transition: transform 0.2s, color 0.2s; /* Transición suave para el zoom y el color */
+    display: inline-block; /* Para que el transform funcione correctamente */
+  }
+  
+  /* Efecto de zoom y cambio de color al pasar el cursor sobre el enlace */
+  #lista1 li a:hover {
+    transform: scale(1.1); /* Zoom al 110% del tamaño original */
+    color: #8bc8e9; /* Cambiamos el color a verde claro */
+  }
+  
+  /*estilos para los carruceles */
+  .carousel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-main {
+    width: 965px; /* Ajusta el ancho según tus necesidades */
+    height: 550px; /* Ajusta la altura según tus necesidades */
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide {
+    width: 100%;
+    border-radius: 3%;
+    position: absolute;
+    display: none;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnails-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    margin: 0 5px; /* Espacio entre miniaturas */
+    cursor: pointer;
+}
+
+.thumbnail img {
+    width: 50px; /* Tamaño de las miniaturas */
+    height: 50px;
+    object-fit: cover;
+}
+/*zoom a carruzel*/
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-main {
+    position: relative;
+}
+
+.carousel-slide {
+    
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    transition: transform 0.3s ease, scale 0.3s ease; /* Transiciones suaves para el zoom */
+}
+
+
+
+.carousel-slide img {
+   
+    object-fit: cover;
+}
+
+/* Resto del CSS... */
+
+
+
+
+    /* Agregar este estilo CSS para el borde amarillo */
+    .thumbnail.active-carousel{
+      border:  2px solid gold;
+    
+      
+    }
+    /* Estilos para el segundo carrusel */
+   .thumbnail-1.active-carousel-1{
+        border: 2px solid yellow;
+        text-align: center;
+      }
+    
+    
+      .carousel-container-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .carousel-main-1 {
+        width: 1112px; /* Ajusta el ancho según tus necesidades */
+        height: 420px; /* Ajusta la altura según tus necesidades */
+        overflow: hidden;
+        position: relative;
+      }
+    
+      .carousel-slide-1 {
+        
+        border-radius: 3%;
+        position: absolute;
+        display: none;
+      }
+      
+      @media only screen and (max-width: 950px) {
+    .carousel-slide-1 {
+        width: 100%;
+        height: 100%;
+       /* Puedes ajustar la altura según tus necesidades */
+        margin-left: 0;
+    }
+
+}
+
+      .carousel-slide-1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .thumbnails-container-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+    
+      .thumbnail-1 {
+        margin: 0 5px; /* Espacio entre miniaturas */
+        cursor: pointer;
+      }
+    
+      .thumbnail-1 img {
+        width: 50px; /* Tamaño de las miniaturas */
+        height: 50px;
+        object-fit: cover;
+      }
+    
+ 
+    
+       /* Estilos para el tercer  carrusel */
+    .thumbnail-2.active-carousel-2 {
+        border: 2px solid yellow;
+      }
+      .carousel-container-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .carousel-main-2 {
+        width: 965px; /* Ajusta el ancho según tus necesidades */
+        height: 550px; /* Ajusta la altura según tus necesidades */
+        overflow: hidden;
+        position: relative;
+      }
+    
+      .carousel-slide-2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+      }
+    
+      .carousel-slide-2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .thumbnails-container-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .thumbnail-2 {
+        margin: 0 5px; /* Espacio entre miniaturas */
+        cursor: pointer;
+      }
+    
+      .thumbnail-2 img {
+        width: 50px; /* Tamaño de las miniaturas */
+        height: 50px;
+        object-fit: cover;
+      }
+    
+      /* Zoom a carrusel */
+    
+      .carousel-container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .carousel-main-2 {
+        position: relative;
+      }
+    
+      .carousel-slide-2 {
+        overflow: hidden;
+        position: absolute;
+        display: none;
+        transition: transform 0.3s ease, scale 0.3s ease; /* Transiciones suaves para el zoom */
+      }
+    
+      .carousel-slide-2 img {
+        object-fit: cover;
+      }
+
+
+        /* Estilos para el Cuarto carrucel*/
+    .thumbnail-3.active-carousel-3 {
+        border: 2px solid yellow;
+      }
+      .carousel-container-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .carousel-main-3 {
+        width: 965px; /* Ajusta el ancho según tus necesidades */
+        height: 550px; /* Ajusta la altura según tus necesidades */
+        overflow: hidden;
+        position: relative;
+      }
+    
+      .carousel-slide-3 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: none;
+      }
+    
+      .carousel-slide-3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .thumbnails-container-3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .thumbnail-3 {
+        margin: 0 5px; /* Espacio entre miniaturas */
+        cursor: pointer;
+      }
+    
+      .thumbnail-3 img {
+        width: 50px; /* Tamaño de las miniaturas */
+        height: 50px;
+        object-fit: cover;
+      }
+    
+      /* Zoom a carrusel */
+    
+      .carousel-container-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    
+      .carousel-main-3 {
+        position: relative;
+      }
+    
+      .carousel-slide-3 {
+        overflow: hidden;
+        position: absolute;
+        display: none;
+        transition: transform 0.3s ease, scale 0.3s ease; /* Transiciones suaves para el zoom */
+      }
+    
+      .carousel-slide-3 img {
+        object-fit: cover;
+      }
+
+      /* estilso quinto carrucel */
+      .thumbnail-4.active-carousel-4{
+        border: 2px solid yellow;
+        text-align: center;
+      }
+      .carousel-container-4 {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+    }
+    
+    .carousel-main-4 {
+        width: 15%; /* Ancho del carrusel */
+        height: 5%; /* Alto del carrusel */
+        overflow: hidden;
+    }
+    
+    .carousel-slide-4 {
+        position: relative;
+    }
+    
+    .carousel-slide-4 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+      
+    
+      .carousel-slide-4 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    
+      .thumbnails-container-4 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+      }
+    
+      .thumbnail-4 {
+        margin: 0 5px; /* Espacio entre miniaturas */
+        cursor: pointer;
+      }
+    
+      .thumbnail-4 img {
+        width: 50px; /* Tamaño de las miniaturas */
+        height: 50px;
+        object-fit: cover;
+      }
+    

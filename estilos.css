@@ -1,0 +1,161 @@
+
+
+#lista1 li {  /* llamo al elemento señalado*/
+  /* quita estilos ya predeterminados*/
+   margin: 20px; /* distancia elementos de la lista*/
+    display:inline; /* de vertical a orizontal*/
+  }
+   
+
+  #lista1 {
+      font-family:Arial;
+      font-weight:lighter;
+     
+      font: size 13px; /* tamaño texto */
+      line-height: 30px; /* distancia de los elementos verticales */
+     
+      text-align:center; /* centrar lista */
+      
+  }
+a {
+  text-align:center;
+  
+   color:rgb(241, 241, 249);
+   border-radius: 40px;
+   font-family:Franklin Gothic Medium;
+  
+}
+nav {
+  list-style: none;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 50px;
+  margin-right: 50px;
+  }
+
+body {
+  background: url(cieloestrellado.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+header{
+
+  background-color: rgba(45, 45, 75, 0.8); 
+  border-radius: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+#titulo1{
+text-align: center;
+  color: rgb(255, 255, 255);
+font-family: fantasy;
+}
+main{
+  text-align:left 30%;
+  color:white;
+  text-decoration:none;
+  font-family:Arial;
+
+}
+article{
+  margin-top: 2%;
+background-color: rgb(5, 5, 5);
+border-radius: 40px;
+opacity: 0.85;
+image-orientation: from-image;
+
+}
+p{
+  margin-left: 5%;
+font-family:'Times New Roman', Times, serif;
+
+}
+h2
+{
+text-align: center;
+font-weight: bold; /* Poner todos los títulos y párrafos en negrita */
+text-decoration: underline; /* Subrayar los títulos */
+}
+img{
+  display:block;
+  margin:auto;
+  line-height: 10px;
+  border-radius: 30%;
+}
+ul
+{
+  background-color: rgba(2, 23, 44, 0.6);
+  border-radius: 40px;
+  
+}
+footer {
+  background-color: black;
+  
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  height: 35px;
+  width:100%;
+  color: white;
+  opacity: 0.6;
+  
+}
+
+.alinear-izquierda{
+  float: right;
+  }
+/* Estilo para los enlaces en el menú */
+#lista1 li a {
+  text-decoration: none; /* Quitamos el subrayado predeterminado */
+  transition: transform 0.2s, color 0.2s; /* Transición suave para el zoom y el color */
+  display: inline-block; /* Para que el transform funcione correctamente */
+}
+
+/* Efecto de zoom y cambio de color al pasar el cursor sobre el enlace */
+#lista1 li a:hover {
+  transform: scale(1.03); /* Zoom al 110% del tamaño original */
+  color: #8bc8e9; /* Cambiamos el color a verde claro */
+}
+/* Estilo para el efecto de zoom en los enlaces */
+.zoomable {
+  transition: transform 0.2s, color 0.2s; /* Transición suave para el efecto de zoom y color */
+  display: inline-block; /* Hace que el enlace sea un bloque en línea */
+  color: #ffffff; /* Color de texto predeterminado (negro) */
+}
+
+/* Efecto de zoom y cambio de color al pasar el cursor sobre los enlaces */
+.zoomable:hover {
+  transform: scale(1.03); /* Zoom al 110% del tamaño original al pasar el cursor */
+  color: #8bc8e9; /* Cambiamos el color a azul (#0074D9) al pasar el cursor */
+}
+
+
+h3{
+  margin-left: 5%;
+font-family:'Times New Roman', Times, serif;
+font-weight: bold; /* Poner todos los títulos y párrafos en negrita */
+text-decoration: underline; /* Subrayar los títulos */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2, p,img{
+  animation: fadeIn 2s ease-in-out;
+
+}
+#favicon {
+  border-radius: 35%;
+}
+.carousel-item.active-carousel {
+  border: 2px solid yellow;
+}
